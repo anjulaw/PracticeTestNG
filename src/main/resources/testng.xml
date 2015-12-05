@@ -1,0 +1,24 @@
+<suite name="PracticeTestNG">
+    <test name="TestNG">
+        <groups>
+            <!--can define name by including multiple groups-->
+            <define name = "All">
+                <include name="car"/>
+                <include name="Scooter"/>
+            </define>
+            <!--under run tag we can define which groups should be run-->
+            <run>
+                <include name = "All"/>
+            </run>
+        </groups>
+        <classes>
+            <!--<class name="com.testNG.basic.TestNGSelinium" />-->
+            <!--<class name="com.testNG.basic.Sequence" />-->
+            <class name="com.testNG.advance.Grouping" />
+            <!--<class name="com.testNG.basic.TestNGBasic" />-->
+        </classes>
+
+    </test>
+
+</suite>
+
