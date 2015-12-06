@@ -1,20 +1,25 @@
 <suite name="PracticeTestNG">
     <test name="TestNG">
-        <groups>
-            <!--can define name by including multiple groups-->
+        <!--<groups>
+            &lt;!&ndash;can define name by including multiple groups&ndash;&gt;
             <define name = "All">
                 <include name="car"/>
                 <include name="Scooter"/>
             </define>
-            <!--under run tag we can define which groups should be run-->
+            &lt;!&ndash;under run tag we can define which groups should be run&ndash;&gt;
             <run>
                 <include name = "All"/>
             </run>
-        </groups>
+        </groups>-->
+
+        <parameter name="sUserName" value="anjulaw"/>
+        <parameter name="sPassword" value="VJxwVmrYPL9Z"/>
+
         <classes>
             <!--<class name="com.testNG.basic.TestNGSelinium" />-->
             <!--<class name="com.testNG.basic.Sequence" />-->
-            <class name="com.testNG.advance.Grouping" />
+            <!--<class name="com.testNG.advance.Grouping" />-->
+            <class name="com.testNG.advance.Parameter" />
             <!--<class name="com.testNG.basic.TestNGBasic" />-->
         </classes>
 
